@@ -1,6 +1,6 @@
 ---
-permalink: /services/
-title: "Hire me"
+permalink: /consulting/
+title: "Consulting"
 ---
 
 ## Design systems & component libraries
@@ -10,8 +10,8 @@ I build React and TypeScript component libraries from scratch. My user interface
 Out of the box, you get:
 
 - accessibility
-- themes
-- end-to-end documentation
+- themes and tokens
+- component APIs that put developer experience first
 - custom AI tuned to your project: harnesses and skills for Codex and Claude Code
 
 ## Frontend modernization
