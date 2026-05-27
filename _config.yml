@@ -115,7 +115,7 @@ analytics:
 author:
   # name: "Mark W. Jacobs"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Senior frontend engineer and AI-augmented development consultant"
+  bio: "Senior frontend engineer and AI-assisted development consultant"
   links:
     - label: "Chicago, IL"
       icon: "fab fa-fw fa-map-marker-alt"
@@ -218,7 +218,7 @@ pagination:
   collection: "posts"
   per_page: 10
   permalink: "/page/:num/"
-  title: ":title - page :num"
+  title: ":title | page :num"
   limit: 0
   sort_field: "date"
   sort_reverse: true
@@ -283,6 +283,13 @@ compress_html:
 
 # Defaults
 defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""
