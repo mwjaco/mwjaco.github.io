@@ -235,26 +235,6 @@
 
     a {
       position: relative;
-
-      &:before {
-        content: "";
-        position: absolute;
-        inset-inline-start: 0;
-        bottom: 0;
-        height: 4px;
-        background: $primary-color;
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-        transform: scaleX(0) translate3d(0, 0, 0); // hide
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); // reveal
-      }
     }
   }
 
@@ -267,9 +247,12 @@
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $background-color;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
+    -webkit-box-shadow:
+      0 2px 4px 0 rgba(#000, 0.16),
       0 2px 10px 0 rgba(#000, 0.12);
-    box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+    box-shadow:
+      0 2px 4px 0 rgba(#000, 0.16),
+      0 2px 10px 0 rgba(#000, 0.12);
 
     &.hidden {
       display: none;
